@@ -32,6 +32,21 @@
   letter-spacing: 0.05em;
 }
 
+.headerRight { display: flex; align-items: center; gap: 8px; }
+
+.searchInput {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  padding: 6px 12px;
+  font-size: 11px;
+  width: 200px;
+  transition: border-color 0.15s;
+}
+.searchInput:focus { border-color: var(--border-focus); }
+.searchInput::placeholder { color: var(--text-dim); }
+
 .newBtn {
   font-size: 11px;
   font-weight: 700;
